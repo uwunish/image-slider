@@ -1,0 +1,66 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+.container {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 600px;
+	height: 450px;
+}
+
+.current-image {
+	border-radius: 0.5rem;
+	box-shadow: 0px 0px 7px #666;
+	width: 100%;
+	height: 100%;
+}
+
+.arrow {
+	position: absolute;
+	width: 2rem;
+	height: 2rem;
+	color: white;
+	filter: drop-shadow(0px 0px 5px #555);
+}
+
+.arrow-left {
+	left: 1rem;
+}
+
+.arrow-right {
+	right: 1rem;
+}
+
+.circular-image-indicators {
+	display: flex;
+	position: absolute;
+	bottom: 1rem;
+}
+
+.current-indicator {
+	background-color: white;
+	width: 15px;
+	height: 15px;
+	border: none;
+	outline: none;
+	border-radius: 50%;
+	margin-right: 5px;
+}
+
+.hide-current-image {
+	display: none;
+}
+
+.inactive-indicator {
+	background-color: #ccc;
+}
